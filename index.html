@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Dark Mode</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- data-theme="dark" -->
+<body id = "body" data-theme="light">
+    <!-- Light And Dark -->
+    <div class="light_dark">
+        <div id="toggle_icon">
+            <span class="toggle_text" id = "toggle_text">Light Mode</span>
+            <i class="fas fa-sun" id = favico_active></i>
+        </div>
+        <label class="switch">
+            <input type="checkbox" id ="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="bar">
+        <i class="fas fa-bars" id = 'bar'></i>
+    </div>
+    <nav id="nav">
+        <div class="contain_nav">
+        <a href="#home" class = 'nav__item active'>HOME</a>
+        <a href="#about" class = 'nav__item'>ABOUT</a>
+        <a href="#contact" class = 'nav__item'>CONTACT</a>
+        <a href="#project" class = 'nav__item'>PROJECT</a>
+    </div>
+    </nav>
+
+    <selection id="home">
+        <div class="title-group">
+           <h1> Custom Title Here</h1>
+           <h2 id="description">Welcome to the Website!</h2>
+        </div>
+        <div class="info" id ='about'>
+            <h1>Undraw Illustrations</h1>
+            <div class="image_container">
+                <div class="one_image">
+                    <h2>Web Innovation</h2>
+                    <div class="image">
+                        <img src="undraw_Virtua_1.svg" alt="" id = 'imgage_1'>
+                    </div>
+                </div>
+                <div class="one_image">
+                    <h2>Problem Solving </h2>
+                   <div class="image">
+                    <img src="undraw_Virtua_2.svg" alt="" id = 'imgage_2'>
+                   </div>
+                </div>
+                <div class="one_image">
+                    <h2>High Concept</h2>
+                    <div class="image">
+                        <img src="undraw_Virtua_3.svg" alt="" id = 'imgage_3'>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button" id = 'contact'>
+            <h1>Buttons</h1>
+            <div class="contact__container">
+            <div class="button__container">
+                <button class="btn btn--primary">Primary</button>
+                <button class="btn btn--secondary">Secondary</button>
+                <button class="btn btn--dissabled">Dissabled</button>
+                <button class="btn btn--outline">Outline</button>
+                <button class="btn btn--alt_outline">Alt Outline</button>
+                <button class="btn btn--dissabled_two">Dissabled</button>
+            </div>
+            <div class="paragraph">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repudiandae corporis tempore reiciendis voluptatum magnam deserunt, sed ratione porro id, iure laudantium repellendus ea temporibus explicabo odit vel laboriosam ipsam.</p>
+            </div>
+        </div>
+        </div>
+        <div class="icon" id = 'project'>
+            <div class="social-icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-codepen"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-medium"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </selection>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
